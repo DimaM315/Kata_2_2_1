@@ -26,12 +26,11 @@ public class Car {
     public int getSeries() {
         return series;
     }
-    public void setSeries(int series) {
-        this.series = series;
-    }
 
     @Override
     public String toString() {
-        return model + ' ' + series;
+        String owner = user != null ? user.getFirstName() : "on sale";
+        return model + ' ' + series + " | Owner: " + owner;
     }
+
 }
