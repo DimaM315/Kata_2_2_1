@@ -2,7 +2,6 @@ package hiber;
 
 import hiber.config.AppConfig;
 import hiber.model.Car;
-import hiber.model.Photo;
 import hiber.model.User;
 import hiber.service.ThingService;
 import hiber.service.UserService;
@@ -21,7 +20,6 @@ public class MainApp {
 
       //testSelectUserByCarSeries(userService);
       //getEntities(userService);
-      //getPhotoList(thingService);
 
       context.close();
    }
