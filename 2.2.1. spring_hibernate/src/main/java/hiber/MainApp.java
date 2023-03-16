@@ -42,10 +42,5 @@ public class MainApp {
       System.out.println("\n#### selectUserByCarSeries ####\n"+userService.getUserByCarSeries(4694) + "\n");
       System.out.println("\n#### selectUserByCarSeries ####\n"+userService.getUserByCarSeries(0) + "\n");
    }
-   public static void getPhotoList(ThingService thingService) {
-      thingService.addPhoto(new Photo("Yellow Bear"));
-      List<Photo> listPhoto = thingService.listPhoto();
-      for (Photo photo : listPhoto) {System.out.println(photo);}
-   }
 
 }
