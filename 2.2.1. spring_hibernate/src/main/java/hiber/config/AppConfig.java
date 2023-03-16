@@ -1,7 +1,6 @@
 package hiber.config;
 
 import hiber.model.Car;
-import hiber.model.Photo;
 import hiber.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -50,7 +49,7 @@ public class AppConfig {
 
       factoryBean.setHibernateProperties(props);
       factoryBean.setAnnotatedClasses(// сообщияем Hibernate, какие из хранимых классов
-              User.class, Car.class, Photo.class);
+              User.class, Car.class);
       // являются частью метаданных отображения.
       return factoryBean;
    }
